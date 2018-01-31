@@ -1,8 +1,11 @@
-# .editorconfig (not sure if working)
+This package includes:
+1. [ESLint](https://eslint.org/)
 
-Cross editor config. But might need to download the plugin for some. [Read](http://editorconfig.org/#download)
+# ESLint
 
-Might need to install package `npm install -g editorconfig` for some. [Read](https://stackoverflow.com/a/48523398/4620773)
+VS Code users can at least follow [this](https://www.youtube.com/watch?v=cMrDePs86Uo)
+
+The ES Lint does take a while to start up.
 
 ---
 
