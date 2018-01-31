@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.0.3"
+    "@codes-and-coffees/react-pkg": "1.0.4"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -42,6 +42,11 @@
       "web.jsx",
       "jsx",
       "node"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "react-app"
     ]
   }
 }
