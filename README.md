@@ -1,6 +1,8 @@
 This package includes:
 1. [ESLint](https://eslint.org/)
 
+More here on the [convenience package](https://github.com/codesandcoffees/react-pkg)
+
 # ESLint
 
 VS Code users can at least follow [this](https://www.youtube.com/watch?v=cMrDePs86Uo)
