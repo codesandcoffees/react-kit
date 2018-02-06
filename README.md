@@ -1,13 +1,16 @@
-This package includes:
-1. [ESLint](https://eslint.org/)
-
+# React Kit
 More here on the [convenience package](https://github.com/codesandcoffees/react-pkg)
 
-# ESLint
+<!-- # ESLint -->
+<!-- VS Code users can at least follow [this](https://www.youtube.com/watch?v=cMrDePs86Uo) -->
+---
 
-VS Code users can at least follow [this](https://www.youtube.com/watch?v=cMrDePs86Uo)
-
-The ES Lint does take a while to start up.
+# Target
+- [ ] Integrate code splitting using [React Loadable](https://github.com/thejameskyle/react-loadable)
+- [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
+- [ ] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
+- [ ] Integrate tests
+- [ ] Implement proper linting
 
 ---
 

@@ -7,8 +7,9 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "deploy": "node scripts/build.js && gh-pages -d build",
+    "build": "node scripts/build.js && pushstate-server build",
+    "build-only": "node scripts/build.js"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -48,5 +49,6 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "https://codesandcoffees.github.io/react-kit/"
 }
