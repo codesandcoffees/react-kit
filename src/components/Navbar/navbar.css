@@ -1,0 +1,7 @@
+.navbar--list {
+  list-style: none;
+  padding: 0px;
+  display: inline-flex; }
+
+.navbar--divider {
+  margin: 0px 5px; }

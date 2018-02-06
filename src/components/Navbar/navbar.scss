@@ -1,0 +1,10 @@
+.navbar {
+  &--list {
+    list-style: none;
+    padding: 0px;
+    display: inline-flex;
+  }
+  &--divider {
+    margin: 0px 5px;
+  }
+}

@@ -4,6 +4,8 @@ module.exports = {
     "react/prefer-stateless-function": 0,
     "react/jsx-filename-extension": 0,
     "import/no-extraneous-dependencies": 0, // to allow the convenience package
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/forbid-prop-types": 0, // for object prop type
   },
   "globals": {
     "document": true
