@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './homeLayout.css';
+import './homeLayout.scss';
 
 import Navbar from '../../components/Navbar';
 

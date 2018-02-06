@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import './counter.css';
+import './counter.scss';
 
 import Button from '../../components/Button';
 import Input from '../../components/Input';
