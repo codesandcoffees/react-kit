@@ -1,4 +1,13 @@
 # React Kit
+
+A starter kit for future `codes and coffees` React projects.
+
+This includes the following:
+- React
+- Redux
+- redux-saga
+- Ducks pattern ['Official Proposal'](https://github.com/erikras/ducks-modular-redux)
+
 More here on the [convenience package](https://github.com/codesandcoffees/react-pkg)
 
 <!-- # ESLint -->
