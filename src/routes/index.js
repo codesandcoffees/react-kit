@@ -3,9 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import HomeLayout from './HomeLayout/HomeLayout';
-
-import Counter from '../containers/Counter';
-import About from '../containers/About';
+import loadableCons from './loadableCons';
 
 const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
   <Route
@@ -21,8 +19,8 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 export default () => (
   <HashRouter >
     <Switch>
-      <AppRoute exact path="/" layout={HomeLayout} component={Counter} />
-      <AppRoute exact path="/about" layout={HomeLayout} component={About} />
+      <AppRoute exact path="/" layout={HomeLayout} component={loadableCons.LoadableCounter} />
+      <AppRoute exact path="/about" layout={HomeLayout} component={loadableCons.LoadableAbout} />
     </Switch>
   </HashRouter >
 );

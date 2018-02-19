@@ -9,5 +9,6 @@ module.exports = {
   },
   "globals": {
     "document": true
-  }
+  },
+  "parser": "babel-eslint"
 };
