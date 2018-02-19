@@ -16,10 +16,10 @@ More here on the [convenience package](https://github.com/codesandcoffees/react-
 
 # Target
 - [x] Integrate code splitting using [React Loadable](https://github.com/thejameskyle/react-loadable)
-- [] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
-- [] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
-- [] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
-- [] Implement proper linting
+- [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
+- [ ] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
+- [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
+- [ ] Implement proper linting
 
 ---
 
