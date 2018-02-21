@@ -2,6 +2,12 @@
 
 A starter kit for future `codes and coffees` React projects.
 
+![open issues](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=for-the-badge)
+![open prs](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=for-the-badge)
+![code size](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=for-the-badge)
+![repo size](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=for-the-badge)
+![contributors](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=for-the-badge)
+
 This includes the following:
 - React
 - Redux
