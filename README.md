@@ -5,7 +5,6 @@ A starter kit for future `codes and coffees` React projects.
 ![open issues](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg)
 ![open prs](https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg)
 ![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg)
-![repo size](https://img.shields.io/github/repo-size/codesandcoffees/react-kit.svg)
 ![contributors](https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg)
 
 This includes the following:
