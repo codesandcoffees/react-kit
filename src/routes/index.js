@@ -19,8 +19,8 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 export default () => (
   <HashRouter >
     <Switch>
-      <AppRoute exact path="/" layout={HomeLayout} component={loadableCons.LoadableCounter} />
-      <AppRoute exact path="/about" layout={HomeLayout} component={loadableCons.LoadableAbout} />
+      <AppRoute exact path="/" layout={HomeLayout} component={loadableCons.Counter} />
+      <AppRoute exact path="/about" layout={HomeLayout} component={loadableCons.About} />
     </Switch>
   </HashRouter >
 );

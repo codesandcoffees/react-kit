@@ -1,17 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
-import './homeLayout.scss';
+import { Navbar } from '../../components';
 
-import Navbar from '../../components/Navbar';
+const Layout = styled.div`
+  display: inherit;
+  text-align: center;
+`;
 
 class HomeLayout extends React.Component {
   render() {
     return (
-      <div className="homeLayout">
+      <Layout>
         <Navbar />
         {this.props.children}
-      </div>
+      </Layout>
     );
   }
 }

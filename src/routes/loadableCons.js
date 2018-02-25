@@ -1,19 +1,19 @@
 import Loadable from 'react-loadable';
 
-import LoadingComponent from '../components/Loading';
+import { Loading } from '../components';
 
 const fakeDelay = ms => new Promise((resolve) => {
   setTimeout(resolve, ms);
 });
 
 export default {
-  LoadableCounter: Loadable({
-    loader: () => fakeDelay(2000).then(() => import('../containers/Counter')),
-    loading: LoadingComponent,
+  Counter: Loadable({
+    loader: () => fakeDelay(2000).then(() => import('../containers/Counter/Counter')),
+    loading: Loading,
   }),
 
-  LoadableAbout: Loadable({
-    loader: () => fakeDelay(2000).then(() => import('../containers/About')),
-    loading: LoadingComponent,
+  About: Loadable({
+    loader: () => fakeDelay(2000).then(() => import('../containers/About/About')),
+    loading: Loading,
   }),
 };

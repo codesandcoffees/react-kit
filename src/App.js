@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import { injectGlobal } from 'styled-components';
 
-import './App.scss';
 import Routes from './routes';
 import store from './store';
 
@@ -10,3 +10,11 @@ export default () => (
     <Routes />
   </Provider>
 );
+
+// Global style
+// eslint-disable-next-line
+injectGlobal`
+  body {
+    font-size: 16px;
+  }
+`;
