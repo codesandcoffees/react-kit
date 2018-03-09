@@ -25,7 +25,7 @@ More here on the [convenience package](https://github.com/codesandcoffees/react-
 - [x] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
 - [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
 - [ ] Implement proper linting
-- [ ] Include eslint pre-commit using [this](https://github.com/okonet/lint-staged)
+- [x] Include eslint pre-commit using [this](https://github.com/okonet/lint-staged)
 
 ---
 
