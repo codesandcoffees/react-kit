@@ -3,13 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.0.9"
+    "@codes-and-coffees/react-pkg": "1.0.16"
   },
   "scripts": {
     "start": "node scripts/start.js",
     "deploy": "node scripts/build.js && gh-pages -d build",
     "build": "node scripts/build.js && pushstate-server build",
-    "build-only": "node scripts/build.js"
+    "build-only": "node scripts/build.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "git add"
+    ]
   },
   "jest": {
     "collectCoverageFrom": [
