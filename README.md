@@ -2,6 +2,8 @@
 
 A starter kit for future `codes and coffees` React projects.
 
+![node version](https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg)
+![npm version](https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg)
 ![open issues](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg)
 ![open prs](https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg)
 ![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg)
