@@ -118,4 +118,4 @@ Feel free to open up a [pull request](https://github.com/codesandcoffees/react-k
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Read the original [README.md](/README-original.md)
+Read the original [README.md](/README-orig.md)
