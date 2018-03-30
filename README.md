@@ -46,7 +46,7 @@ react-kit/
 ```
 
 # Getting Started
-At the time of creating this writing the following versions were used
+At the time of writing this, the following versions were used
 ```
 node -v 8.11.1
 npm -v 5.8.0
