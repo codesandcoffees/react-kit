@@ -100,13 +100,16 @@ npm run deploy
 This will build the files and deploy them to the `gh-pages` branch
 
 4. Access your app with the url you used in the `homepage` property.
----
 
 # Target
 - [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
 - [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
 - [ ] Implement proper linting
 - [ ] Create a full pledge app using this kit
+
+# Something to pitch in?
+
+Feel free to open up a [pull request](https://github.com/codesandcoffees/react-kit/pulls) or an [issue](https://github.com/codesandcoffees/react-kit/issues/new)
 
 ---
 
