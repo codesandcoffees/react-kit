@@ -9,25 +9,94 @@ A starter kit for future `codes and coffees` React projects.
 ![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg)
 ![contributors](https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg)
 
-This includes the following:
-- React
-- Redux
-- redux-saga
-- Ducks pattern ['Official Proposal'](https://github.com/erikras/ducks-modular-redux)
+# Includes
+- [React](https://github.com/facebook/react)
+- [Redux](https://github.com/reactjs/redux)
+- [redux-saga](https://github.com/redux-saga/redux-saga)
+- [React Loadable](https://github.com/jamiebuilds/react-loadable)
+- [React Router](https://github.com/ReactTraining/react-router)
+- [Webpack](https://github.com/webpack/webpack)
+- Ducks Pattern ["Official Proposal"](https://github.com/erikras/ducks-modular-redux)
+- [styled-components](https://github.com/styled-components/styled-components)
+- [lint-staged](https://github.com/okonet/lint-staged) for pre-commit hooks
 
 More here on the [convenience package](https://github.com/codesandcoffees/react-pkg)
 
-<!-- # ESLint -->
-<!-- VS Code users can at least follow [this](https://www.youtube.com/watch?v=cMrDePs86Uo) -->
+# App Structure
+```
+react-kit/
+  .vscode/
+  build/
+  config/
+  public/
+  scripts/
+  src/
+  --components/
+  --containers
+  --ducks/
+  --routes/
+  --sagas/
+  --services/
+  --App.js
+  --index.js
+  --registerServiceWorker.js
+  --store.js
+  package.json
+  README.md
+```
+
+# Getting Started
+At the time of creating this writing the following versions were used
+```
+node -v 7.10.1
+npm -v 5.7.1
+```
+1. Clone the repository
+```
+git clone git@github.com:codesandcoffees/react-kit.git
+```
+2. Go into the directory
+```
+cd react-kit
+```
+3. Install the packages
+```
+npm run install
+```
+
+# Development
+
+# Deployment
+The deployment process in this app only supports github pages using the `gh-pages` branch. To set it up:
+1. Make necessary changes to your repository's settings.
+
+Change the `source` to `gh-pages branch`.
+
+If you have your own domain. Input your `custom domain` if you have and don't forget to add a `CNAME` file in the `public` folder. This will handle the redirecting from `github pages` to your custom domain.
+
+![gh-pages settings](https://res.cloudinary.com/dfrhytey3/image/upload/v1522392328/gh-pages_rwrv32.png)
+
+2. In the `package.json` change the `homepage` property with the url where the app will be accessed
+```
+// for github pages domain
+"homepage": "https://<username>.github.io/<repository_name>"
+
+// for custom domains just put your own domain
+"homepage": "<your_custom_domain_here>"
+```
+3. After setting up the correct url for `homepage` you can now deploy using
+```
+npm run deploy
+```
+This will build the files and deploy them to the `gh-pages` branch
+
+4. Access your app with the url you used in the `homepage` property.
 ---
 
 # Target
-- [x] Integrate code splitting using [React Loadable](https://github.com/thejameskyle/react-loadable)
 - [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
-- [x] Integrate google-like class naming using [styled components](https://github.com/styled-components/styled-components)
 - [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
 - [ ] Implement proper linting
-- [x] Include eslint pre-commit using [this](https://github.com/okonet/lint-staged)
 
 ---
 
