@@ -111,6 +111,9 @@ This will build the files and deploy them to the `gh-pages` branch
 
 Feel free to open up a [pull request](https://github.com/codesandcoffees/react-kit/pulls) or an [issue](https://github.com/codesandcoffees/react-kit/issues/new)
 
+# Projects using this kit
+- [Resume by iamdevlinph](https://github.com/iamdevlinph/resume)
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
