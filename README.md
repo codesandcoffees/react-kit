@@ -48,8 +48,8 @@ react-kit/
 # Getting Started
 At the time of creating this writing the following versions were used
 ```
-node -v 7.10.1
-npm -v 5.7.1
+node -v 8.11.1
+npm -v 5.8.0
 ```
 1. Clone the repository
 ```
@@ -65,6 +65,15 @@ npm run install
 ```
 
 # Development
+To start development server and access the site at [localhost:3000/](localhost:3000/)
+```
+npm run start
+```
+
+And if you only want to build the files
+```
+npm run build-only
+```
 
 # Deployment
 The deployment process in this app only supports github pages using the `gh-pages` branch. To set it up:
@@ -97,6 +106,7 @@ This will build the files and deploy them to the `gh-pages` branch
 - [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
 - [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
 - [ ] Implement proper linting
+- [ ] Create a full pledge app using this kit
 
 ---
 
