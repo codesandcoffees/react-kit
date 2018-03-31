@@ -105,7 +105,7 @@ This will build the files and deploy them to the `gh-pages` branch
 - [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
 - [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
 - [ ] Implement proper linting
-- [ ] Create a full pledge app using this kit
+- [ ] Create a full pledge app as a sample
 
 # Something to pitch in?
 
