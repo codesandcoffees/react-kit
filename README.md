@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="/docs/logo.jpg" alt="React Kit Logo"/>
-</p>
+<img src="/docs/logo.jpg" alt="React Kit Logo"/>
 
 A starter kit for future `codes and coffees` React projects.
 
