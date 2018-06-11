@@ -1,8 +1,9 @@
 {
-  "main.js": "static/js/main.a15a0ae8.js",
-  "main.js.map": "static/js/main.a15a0ae8.js.map",
-  "static/js/0.10cccdca.chunk.js": "static/js/0.10cccdca.chunk.js",
-  "static/js/0.10cccdca.chunk.js.map": "static/js/0.10cccdca.chunk.js.map",
-  "static/js/1.09fbb752.chunk.js": "static/js/1.09fbb752.chunk.js",
-  "static/js/1.09fbb752.chunk.js.map": "static/js/1.09fbb752.chunk.js.map"
+  "static/js/0.ad970d01.chunk.js": "/react-kit/static/js/0.ad970d01.chunk.js",
+  "static/js/0.ad970d01.chunk.js.map": "/react-kit/static/js/0.ad970d01.chunk.js.map",
+  "static/js/1.3dc1a5b0.chunk.js": "/react-kit/static/js/1.3dc1a5b0.chunk.js",
+  "static/js/1.3dc1a5b0.chunk.js.map": "/react-kit/static/js/1.3dc1a5b0.chunk.js.map",
+  "main.js": "/react-kit/static/js/main.c0d6e135.js",
+  "main.js.map": "/react-kit/static/js/main.c0d6e135.js.map",
+  "index.html": "/react-kit/index.html"
 }
