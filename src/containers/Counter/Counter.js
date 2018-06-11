@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import { Button, Input } from '../../components';
 
-import { actions as counterActions } from '../../ducks/counter';
+import { actions as counterActions } from '../../sagaDucks/counter/counter';
 
 const Container = styled.div`
   display: inherit;

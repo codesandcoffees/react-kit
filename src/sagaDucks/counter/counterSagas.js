@@ -1,6 +1,6 @@
 import { put, takeLatest } from 'redux-saga/effects';
 
-import { types as counterTypes } from '../ducks/counter';
+import { types as counterTypes } from './counter';
 
 function* willIncrease(action) {
   const val = (action && action.val) ? action.val : null;

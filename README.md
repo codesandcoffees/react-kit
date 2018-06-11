@@ -35,9 +35,8 @@ react-kit/
   src/
   --components/
   --containers
-  --ducks/
   --routes/
-  --sagas/
+  --sagaDucks/
   --services/
   --App.js
   --index.js
