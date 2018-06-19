@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.1.1"
+    "@codes-and-coffees/react-pkg": "1.1.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
