@@ -1,15 +1,18 @@
-<div align="center">
+![react kit logo](./docs/logo.jpg)
 
-<img src="/docs/logo.jpg" alt="React Kit Logo"/>
+#### React Pkg
 
-![open issues](https://img.shields.io/github/issues/codesandcoffees/react-kit.svg)
-![open prs](https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg)
+[![npm version][npm-img]][npm-url]
+[![node version][node-img]][node-url]
+[![deps][deps-img]][deps-url]
+
+#### React Kit
+
+[![open issues][issues-img]][issues-url]
+[![open prs][pr-img]][pr-url]
 ![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg)
-![contributors](https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg)
+[![contributors][contributor-img]][contributor-url]
 
-# React Kit
-A React starter kit
-</div>
 
 # Includes
 - [React](https://github.com/facebook/react)
@@ -120,3 +123,19 @@ Feel free to open up a [pull request](https://github.com/codesandcoffees/react-k
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Read the original [README.md](/README-orig.md)
+
+<!-- React PKG -->
+[npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg
+[npm-url]: https://www.npmjs.com/package/@codes-and-coffees/react-pkg
+[node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg
+[node-url]: https://nodejs.org/en/
+[deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg
+[deps-url]: https://david-dm.org/codesandcoffees/react-pkg
+
+<!-- React Kit -->
+[issues-url]: https://github.com/codesandcoffees/react-kit/issues
+[issues-img]: https://img.shields.io/github/issues/codesandcoffees/react-kit.svg
+[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg
+[pr-url]: https://github.com/codesandcoffees/react-kit/pulls
+[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg
+[contributor-url]: https://github.com/codesandcoffees/react-kit/graphs/contributors
