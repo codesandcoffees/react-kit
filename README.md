@@ -124,7 +124,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Read the original [README.md](/README-orig.md)
 
-<!-- React PKG -->
+<!-- React PKG Details -->
 [npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg
 [npm-url]: https://www.npmjs.com/package/@codes-and-coffees/react-pkg
 [node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg
@@ -132,7 +132,7 @@ Read the original [README.md](/README-orig.md)
 [deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg
 [deps-url]: https://david-dm.org/codesandcoffees/react-pkg
 
-<!-- React Kit -->
+<!-- Repo Details -->
 [issues-url]: https://github.com/codesandcoffees/react-kit/issues
 [issues-img]: https://img.shields.io/github/issues/codesandcoffees/react-kit.svg
 [pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg
