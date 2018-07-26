@@ -14,7 +14,7 @@
     "fix": "eslint --fix ./",
     "build-only": "node scripts/build.js",
     "precommit": "lint-staged",
-    "mine": "[ -d node_modules/fs-extra ] && node scripts/eject.js"
+    "mine": "node scripts/pre-eject.js && node scripts/eject.js"
   },
   "lint-staged": {
     "*.js": [
