@@ -10,7 +10,7 @@
 
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
-![code size](https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg)
+![code size][code-size-img]
 [![contributors][contributor-img]][contributor-url]
 
 
@@ -140,3 +140,4 @@ Read the original [README.md](/README-orig.md)
 [pr-url]: https://github.com/codesandcoffees/react-kit/pulls
 [contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg
 [contributor-url]: https://github.com/codesandcoffees/react-kit/graphs/contributors
+[code-size-img]: https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg
