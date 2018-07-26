@@ -11,5 +11,15 @@ const removeFolder = (folder) => {
   });
 }
 
-removeFolder('.git');
-removeFolder('docs')
+const queue = (tasks) => {
+  tasks.forEach((task, i) => {
+    task.func(...task.params)
+  });
+};
+
+const tasks = [
+  { func: removeFolder, params: ['.git'] },
+  { func: removeFolder, params: ['docs'] }
+];
+
+queue(tasks);
