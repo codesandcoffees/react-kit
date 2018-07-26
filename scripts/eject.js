@@ -7,23 +7,33 @@ console.log()
 const warn = (string) => console.log(`${COLORS.BgRed}${COLORS.FgWhite}${string}${COLORS.end}`);
 const success = (string) => console.log(`${COLORS.FgGreen}${string}${COLORS.end}`);
 
+const removeFile = (file) => {
+  fs.remove(file, (err) => {
+    warn(`REMOVING FILE: ${file}`);
+    if (err) throw err;
+    success(`REMOVED FILE: ${file}`)
+  })
+}
+
 const removeFolder = (folder) => {
   fs.remove(folder, (err) => {
-    warn(`Removing ${folder} folder`);
+    warn(`REMOVING FOLDER: ${folder}`);
     if (err) throw err;
-    success(`${folder} folder deleted`);
+    success(`REMOVED FOLDER: ${folder}`);
   });
 }
 
-const removeHomepagePackageJson = () => {
+const cleanUpPackageJson = () => {
   fs.readFile('package.json', 'utf8', (err, data) => {
-    warn('Deleting homepage from package.json');
+    warn('CLEANING: package.json');
     if (err) throw err;
     const packageJson = JSON.parse(data);
     delete packageJson.homepage;
+    delete packageJson.scripts.mine;
+    delete packageJson.scripts['mine:init'];
     fs.writeFile('package.json', JSON.stringify(packageJson, null, 2), (writeError) => {
       if (writeError) throw writeError;
-      success('Updated package.json');
+      success('CLEANED: package.json');
     });
   });
 }
@@ -40,7 +50,9 @@ const run = (tasks) => {
 const tasks = [
   { func: removeFolder, params: ['.git'] },
   { func: removeFolder, params: ['docs'] },
-  { func: removeHomepagePackageJson }
+  { func: cleanUpPackageJson },
+  { func: removeFile, params: ['scripts/pre-eject.js'] },
+  { func: removeFile, params: ['scripts/eject.js'] }
 ];
 
 run(tasks);
