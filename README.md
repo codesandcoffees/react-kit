@@ -67,6 +67,8 @@ cd react-kit
 ```
 npm run install
 ```
+# Commands
+* **`npm run mine`** - Make it yours but will not delete the core `js` files. Will only delete files related to the original repository.
 
 # Development
 To start development server and access the site at [localhost:3000/](localhost:3000/)

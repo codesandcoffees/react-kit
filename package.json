@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.1.3"
+    "@codes-and-coffees/react-pkg": "1.1.3",
+    "fs-extra": "7.0.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -12,7 +13,8 @@
     "test": "eslint ./",
     "fix": "eslint --fix ./",
     "build-only": "node scripts/build.js",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "mine": "node scripts/eject.js"
   },
   "lint-staged": {
     "*.js": [
