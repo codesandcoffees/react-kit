@@ -111,12 +111,13 @@ This will build the files and deploy them to the `gh-pages` branch
 - [ ] Implement proper linting
 - [ ] Create a full pledge app as a sample
 
+# Projects using this kit
+- [Resume by iamdevlinph](https://github.com/iamdevlinph/resume)
+- [Projects Tracker](https://github.com/iamdevlinph/projects-tracker)
+
 # Something to pitch in?
 
 Feel free to open up a [pull request](https://github.com/codesandcoffees/react-kit/pulls) or an [issue](https://github.com/codesandcoffees/react-kit/issues/new)
-
-# Projects using this kit
-- [Resume by iamdevlinph](https://github.com/iamdevlinph/resume)
 
 ---
 
