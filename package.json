@@ -14,6 +14,7 @@
     "fix": "eslint --fix ./",
     "build-only": "node scripts/build.js",
     "precommit": "lint-staged",
+    "mine:init": "npm i fs-extra && echo \"You can now proceed with 'npm run mine' after this\"",
     "mine": "node scripts/pre-eject.js && node scripts/eject.js"
   },
   "lint-staged": {
