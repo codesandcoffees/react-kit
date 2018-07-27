@@ -8,13 +8,14 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "deploy": "node scripts/build.js && gh-pages -d build",
-    "lint": "eslint ./ > lint.log",
-    "test": "eslint ./",
-    "fix": "eslint --fix ./",
+    "deploy": "node scripts/build.js && gh-pages -d build && exit 0",
+    "lint:log": "eslint ./ > lint.log && exit 0",
+    "lint:test": "eslint ./ && exit 0",
+    "lint:fix": "eslint --fix ./ && exit 0",
     "build-only": "node scripts/build.js",
     "precommit": "lint-staged",
-    "mine:init": "npm i fs-extra && echo \"You can now proceed with 'npm run mine'\"",
+    "precommit:init": "npm i lint-staged husky && exit 0",
+    "mine:init": "npm i fs-extra && echo \"You can now proceed with 'npm run mine'\n\" && exit 0",
     "mine": "node scripts/pre-eject.js && node scripts/eject.js"
   },
   "lint-staged": {

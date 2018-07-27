@@ -1,6 +1,4 @@
-![react kit logo](./docs/logo.jpg)
-
-A barebones React starter kit.
+# New Project Name
 
 #### Core Dependency Status
 
@@ -57,18 +55,12 @@ At the time of writing this, the following versions were used
 node -v 8.11.3
 npm -v 6.2.0
 ```
-1. Clone the repository
-```
-git clone git@github.com:codesandcoffees/react-kit.git
-```
-2. Go into the directory
-```
-cd react-kit
-```
-3. Install the packages
+
+Install the packages
 ```
 npm run install
 ```
+
 # Commands
 Run with `npm run <command>` if necessary
 * **`start`** - Start the app. Access at [http://localhost:3000/](http://localhost:3000/)
@@ -79,7 +71,6 @@ Run with `npm run <command>` if necessary
 * **`build-only`** - Will create a production ready build to the `build` folder.
 * **`precommit`** - The precommit hook which runs lint-staged to lint staged files on commit.
 * **`precommit:init`** - Install precommit related tools independently if you cannot see a precommit hook when you do a commit.
-* **`mine`** - Make it yours but will not delete the core `js` files. Will only delete files related to the original repository.
 
 # Development
 To start development server and access the site at [localhost:3000/](localhost:3000/)
@@ -118,23 +109,9 @@ This will build the files and deploy them to the `gh-pages` branch
 
 4. Access your app with the url you used in the `homepage` property.
 
-# Target
-- [ ] Integrate selector library using [Reselect](https://github.com/reactjs/reselect)
-- [ ] Integrate testing like [jest](https://codesandcoffees.github.io/react-kit/#/), [enzyme](https://github.com/airbnb/enzyme)
-- [ ] Implement proper linting
-- [ ] Create a full pledge app as a sample
-
-# Projects using this kit
-- [Resume by iamdevlinph](https://github.com/iamdevlinph/resume)
-- [Projects Tracker](https://github.com/iamdevlinph/projects-tracker)
-
-# Something to pitch in?
-
-Feel free to open up a [pull request](https://github.com/codesandcoffees/react-kit/pulls) or an [issue](https://github.com/codesandcoffees/react-kit/issues/new)
-
 ---
 
-This project is based on [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [React Kit](https://github.com/codesandcoffees/react-kit) which is based on [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Read the original [README.md](/README-orig.md)
 
@@ -147,10 +124,10 @@ Read the original [README.md](/README-orig.md)
 [deps-url]: https://david-dm.org/codesandcoffees/react-pkg
 
 <!-- Repo Details -->
-[issues-url]: https://github.com/codesandcoffees/react-kit/issues
-[issues-img]: https://img.shields.io/github/issues/codesandcoffees/react-kit.svg
-[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg
-[pr-url]: https://github.com/codesandcoffees/react-kit/pulls
-[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg
-[contributor-url]: https://github.com/codesandcoffees/react-kit/graphs/contributors
-[code-size-img]: https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg
+[issues-url]: https://github.com/<AUTHOR_NAME>/<REPO_NAME>/issues
+[issues-img]: https://img.shields.io/github/issues/<AUTHOR_NAME>/<REPO_NAME>.svg
+[pr-img]: https://img.shields.io/github/issues-pr/<AUTHOR_NAME>/<REPO_NAME>.svg
+[pr-url]: https://github.com/<AUTHOR_NAME>/<REPO_NAME>/pulls
+[contributor-img]: https://img.shields.io/github/contributors/<AUTHOR_NAME>/<REPO_NAME>.svg
+[contributor-url]: https://github.com/<AUTHOR_NAME>/<REPO_NAME>/graphs/contributors
+[code-size-img]: https://img.shields.io/github/languages/code-size/<AUTHOR_NAME>/<REPO_NAME>.svg
