@@ -38,15 +38,6 @@ const cleanUpPackageJson = () => {
   });
 }
 
-const run = (tasks) => {
-  tasks.forEach((task, i) => {
-    if (!task.params) { // if no params are passed default an empty array
-      task.params = [];
-    }
-    task.func(...task.params)
-  });
-};
-
 const tasks = [
   { func: removeFolder, params: ['.git'] },
   { func: removeFolder, params: ['docs'] },
@@ -54,5 +45,20 @@ const tasks = [
   { func: removeFile, params: ['scripts/pre-eject.js'] },
   { func: removeFile, params: ['scripts/eject.js'] }
 ];
+
+// sequentially run the tasks
+let tasksCtr = 0;
+const tasksLen = tasks.length;
+const run = (tasks) => {
+  const params = tasks[tasksCtr].params ? tasks[tasksCtr].params : [];
+  tasks[tasksCtr].func(...params);
+  tasksCtr++;
+  if (tasksCtr < tasksLen) {
+    setTimeout(() => {
+      run(tasks);
+    }, 1000);
+  }
+};
+
 
 run(tasks);
