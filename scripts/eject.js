@@ -1,11 +1,13 @@
 const fs = require('fs-extra');
 const COLORS = require('./colors');
 
-console.log(`${COLORS.FgYellow}Making this yours. Please wait a while.${COLORS.end}`);
+const warn = string => console.log(`${COLORS.FgRed}${string}${COLORS.end}`);
+const success = string => console.log(`${COLORS.FgGreen}${string}${COLORS.end}`);
+const info = string => console.log(`${COLORS.FgYellow}${string}${COLORS.end}`);
+
+info('Making this yours. Please wait a while.');
 console.log()
 
-const warn = (string) => console.log(`${COLORS.BgRed}${COLORS.FgWhite}${string}${COLORS.end}`);
-const success = (string) => console.log(`${COLORS.FgGreen}${string}${COLORS.end}`);
 
 const removeFile = (file) => {
   fs.remove(file, (err) => {
@@ -42,6 +44,7 @@ const tasks = [
   { func: removeFolder, params: ['.git'] },
   { func: removeFolder, params: ['docs'] },
   { func: cleanUpPackageJson },
+  { func: removeFile, params: ['scripts/colors.js'] },
   { func: removeFile, params: ['scripts/pre-eject.js'] },
   { func: removeFile, params: ['scripts/eject.js'] }
 ];
@@ -56,6 +59,13 @@ const run = (tasks) => {
   if (tasksCtr < tasksLen) {
     setTimeout(() => {
       run(tasks);
+    }, 1000);
+  } else {
+    setTimeout(() => {
+      console.log();
+      success('Done removing unnecessary folders, files, and lines of code!');
+      console.log();
+      info('You can now start using this project and push your changes to your repository.\nHappy coding!');
     }, 1000);
   }
 };
