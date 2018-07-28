@@ -8,11 +8,11 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "deploy": "node scripts/build.js && gh-pages -d build && exit 0",
+    "deploy": "npm run build && gh-pages -d build && exit 0",
     "lint:log": "eslint ./ > lint.log && exit 0",
     "lint:test": "eslint ./ && exit 0",
     "lint:fix": "eslint --fix ./ && exit 0",
-    "build-only": "node scripts/build.js",
+    "build": "node scripts/build.js",
     "precommit": "lint-staged",
     "precommit:init": "npm i lint-staged husky && exit 0",
     "mine": "npm i fs-extra && node scripts/pre-eject.js && node scripts/eject.js"
