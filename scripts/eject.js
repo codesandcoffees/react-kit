@@ -84,7 +84,7 @@ const run = (tasks) => {
       console.log();
       success('Done removing unnecessary folders, files, and lines of code!');
       console.log();
-      info(`Don't forget to initialize your git repository.\nDon't forget to update your README.md.\nHappy coding!`);
+      info(`Don't forget to initialize your git repository.\nDon't forget to update your README.md.\nDon't forget to update your homepage in "package.json"\nHappy coding!`);
     }, 1000);
   }
 };
