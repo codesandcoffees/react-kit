@@ -15,8 +15,7 @@
     "build-only": "node scripts/build.js",
     "precommit": "lint-staged",
     "precommit:init": "npm i lint-staged husky && exit 0",
-    "mine:init": "npm i fs-extra && echo \"You can now proceed with 'npm run mine'\n\" && exit 0",
-    "mine": "node scripts/pre-eject.js && node scripts/eject.js"
+    "mine": "npm i fs-extra && node scripts/pre-eject.js && node scripts/eject.js"
   },
   "lint-staged": {
     "*.js": [
