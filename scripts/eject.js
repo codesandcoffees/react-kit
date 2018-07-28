@@ -63,6 +63,7 @@ const tasks = [
   { func: removeFile, param: 'scripts/colors.js' },
   { func: removeFile, param: 'scripts/pre-eject.js' },
   { func: removeFile, param: 'scripts/eject.js' },
+  { func: removeFile, param: 'package-lock.json' },
   { func: moveFile, param: 'scripts/README.md' },
   { func: cleanUpPackageJson },
 ];
