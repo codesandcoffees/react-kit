@@ -70,7 +70,7 @@ cd react-kit
 npm run install
 ```
 # Commands
-Run with `npm run <command>` if necessary
+Run by `npm run <script>`
 * **`start`** - Start the app. Access at [http://localhost:3000/](http://localhost:3000/)
 * **`deploy`** - Will deploy a production build to the `gh-pages` branch.
 * **`lint:log`** - Lint the app and save the results to `lint.log` file.
