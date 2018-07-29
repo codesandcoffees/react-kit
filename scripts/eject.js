@@ -35,15 +35,15 @@ const removeFolder = (folder) => {
 const cleanUpPackageJson = () => {
   fs.readFile('package.json', 'utf8', (err, data) => {
     info('CLEANING: package.json');
-    if (err) error(`CLEANING FAILED: package.json`, err)
+    if (err) error(`CLEANING - READ FAILED: package.json`, err)
     const packageJson = JSON.parse(data);
     packageJson.homepage = '';
     delete packageJson.scripts.mine;
     delete packageJson.scripts['mine:init'];
     delete packageJson.dependencies['fs-extra'];
-    fs.writeFile('package.json', JSON.stringify(packageJson, null, 2), (writeError) => {
-      if (writeError) throw writeError;
-      success('CLEANED: package.json');
+    fs.writeFile('package.json', JSON.stringify(packageJson, null, 2), writeError => {
+      if (writeError) error(`CLEANING - WRITE FAILED: package.json`, err)
+      success('CLEANING SUCCESS: package.json');
     });
   });
 }
@@ -56,16 +56,46 @@ const moveFile = (file) => {
   });
 }
 
+const rewriteFile = (file, target, source) => {
+  fs.readFile(file, 'utf8', (err, data) => {
+    info(`REWRITING FILE: ${file}`);
+    if (err) error(`REWRITING FILE - READ FAILED: ${file}`, err);
+    const replace = new RegExp(target, 'g');
+    const newText = data.replace(replace, source);
+    fs.writeFile(file, newText, 'utf8', err => {
+      if (err) if (err) error(`REWRITING FILE - WRITE FAILED: ${file}`, err);
+      success(`REWRITING FILE SUCCESS: ${file}`)
+    })
+  });
+}
+
+const cleanUpManifestJson = () => {
+  fs.readFile('public/manifest.json', 'utf8', (err, data) => {
+    info('CLEANING: public/manifest.json');
+    if (err) error('CLEANING - READ FAILED: public/manifest.json');
+    const manifestjson = JSON.parse(data);
+    console.log(manifestjson)
+    manifestjson.short_name = 'New Project name';
+    manifestjson.name = 'New project description';
+    fs.writeFile('public/manifest.json', JSON.stringify(manifestjson, null, 2), writeError => {
+      if (writeError) error('CLEANING - WRITE FAILED: public/manifest.json');
+      success('CLEANING SUCCESS: public/manifest.json');
+    })
+  })
+}
+
 const tasks = [
-  { func: removeFolder, param: '.git' },
-  { func: removeFolder, param: 'docs' },
-  { func: removeFile, param: 'README.md' },
-  { func: removeFile, param: 'scripts/colors.js' },
-  { func: removeFile, param: 'scripts/pre-eject.js' },
-  { func: removeFile, param: 'scripts/eject.js' },
-  { func: removeFile, param: 'package-lock.json' },
-  { func: moveFile, param: 'scripts/README.md' },
+  { func: removeFolder, params: ['.git'] },
+  { func: removeFolder, params: ['docs'] },
+  { func: removeFile, params: ['README.md'] },
+  { func: removeFile, params: ['scripts/colors.js'] },
+  { func: removeFile, params: ['scripts/pre-eject.js'] },
+  { func: removeFile, params: ['scripts/eject.js'] },
+  { func: removeFile, params: ['package-lock.json'] },
+  { func: moveFile, params: ['scripts/README.md'] },
+  { func: rewriteFile, params: ['public/index.html', '<title>React Kit</title>', '<title>New Project Name</title>'] },
   { func: cleanUpPackageJson },
+  { func: cleanUpManifestJson }
 ];
 
 // sequentially run the tasks
@@ -73,8 +103,8 @@ let tasksCtr = 0;
 const tasksLen = tasks.length;
 const run = (tasks) => {
   if (tasks.length < 1) error(`No tasks found`);
-  const param = tasks[tasksCtr].param ? tasks[tasksCtr].param : null;
-  tasks[tasksCtr].func(param);
+  const params = tasks[tasksCtr].params ? tasks[tasksCtr].params : [];
+  tasks[tasksCtr].func(...params);
   tasksCtr++;
   if (tasksCtr < tasksLen) {
     setTimeout(() => {
