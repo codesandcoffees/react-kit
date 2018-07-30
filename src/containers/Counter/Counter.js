@@ -21,21 +21,32 @@ class CounterContainer extends React.Component {
     this.customValChange = this.customValChange.bind(this);
     this.customValReset = this.customValReset.bind(this);
   }
+
   customValChange(e) {
     this.setState({ val: +e.target.value });
   }
+
   customValReset() {
     this.setState({ val: 0 });
   }
+
   render() {
+    const {
+      total, counterIncrease, counterDecrease, counterReset,
+    } = this.props;
+    const { val } = this.state;
     return (
       <Container>
-        <h1>{this.props.total}</h1>
-        <Button label="Increase" onClick={() => this.props.counterIncrease(this.state.val)} />
-        <Button label="Decrease" onClick={() => this.props.counterDecrease(this.state.val)} />
-        <Button label="Reset" onClick={this.props.counterReset} />
-        <p>Input custom number to increase or decrease the total</p>
-        <Input type="number" value={this.state.val} onChange={this.customValChange} min={0} />
+        <h1>
+          {total}
+        </h1>
+        <Button label="Increase" onClick={() => counterIncrease(val)} />
+        <Button label="Decrease" onClick={() => counterDecrease(val)} />
+        <Button label="Reset" onClick={counterReset} />
+        <p>
+          Input custom number to increase or decrease the total
+        </p>
+        <Input type="number" value={val} onChange={this.customValChange} min={0} />
         <br />
         <Button label="Reset Custom Value" onClick={this.customValReset} />
       </Container>

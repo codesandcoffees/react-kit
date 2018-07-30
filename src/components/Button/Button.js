@@ -15,8 +15,11 @@ const Button = styled.button`
 
 class ButtonComponent extends React.Component {
   render() {
+    const { onClick, label } = this.props;
     return (
-      <Button onClick={this.props.onClick}>{this.props.label}</Button>
+      <Button onClick={onClick}>
+        {label}
+      </Button>
     );
   }
 }

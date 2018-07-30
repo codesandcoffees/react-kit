@@ -17,12 +17,12 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 );
 
 export default () => (
-  <HashRouter >
+  <HashRouter>
     <Switch>
       <AppRoute exact path="/" layout={HomeLayout} component={loadableCons.Counter} />
       <AppRoute exact path="/about" layout={HomeLayout} component={loadableCons.About} />
     </Switch>
-  </HashRouter >
+  </HashRouter>
 );
 
 AppRoute.propTypes = {

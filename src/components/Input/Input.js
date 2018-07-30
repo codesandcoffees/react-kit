@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 
 class InputComponent extends React.Component {
   render() {
+    const {
+      type, value, onChange, min,
+    } = this.props;
     return (
       <input
-        type={this.props.type}
-        value={this.props.value}
-        onChange={this.props.onChange}
-        min={this.props.min}
+        type={type}
+        value={value}
+        onChange={onChange}
+        min={min}
       />
     );
   }
