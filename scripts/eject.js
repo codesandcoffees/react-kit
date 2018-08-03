@@ -38,6 +38,7 @@ const cleanUpPackageJson = () => {
     if (err) error(`CLEANING - READ FAILED: package.json`, err)
     const packageJson = JSON.parse(data);
     packageJson.homepage = '';
+    packageJson.name = '';
     delete packageJson.scripts.mine;
     delete packageJson.scripts['mine:init'];
     delete packageJson.dependencies['fs-extra'];
