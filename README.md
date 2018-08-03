@@ -139,18 +139,18 @@ This project is based on [Create React App](https://github.com/facebookincubator
 Read the original [README.md](/README-orig.md)
 
 <!-- React PKG Details -->
-[npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg?style=flat-square&maxAge=3600
+[npm-img]: https://img.shields.io/npm/v/@codes-and-coffees/react-pkg.svg?style=flat-square&maxAge=86400
 [npm-url]: https://www.npmjs.com/package/@codes-and-coffees/react-pkg
-[node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg?style=flat-square&maxAge=3600
+[node-img]: https://img.shields.io/node/v/@codes-and-coffees/react-pkg.svg?style=flat-square&maxAge=86400
 [node-url]: https://nodejs.org/en/
-[deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg?style=flat-square&maxAge=3600
+[deps-img]: https://img.shields.io/david/codesandcoffees/react-pkg.svg?style=flat-square&maxAge=86400
 [deps-url]: https://david-dm.org/codesandcoffees/react-pkg
 
 <!-- Repo Details -->
 [issues-url]: https://github.com/codesandcoffees/react-kit/issues
-[issues-img]: https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=flat-square&maxAge=3600
-[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg?style=flat-square&maxAge=3600
+[issues-img]: https://img.shields.io/github/issues/codesandcoffees/react-kit.svg?style=flat-square&maxAge=86400
+[pr-img]: https://img.shields.io/github/issues-pr/codesandcoffees/react-kit.svg?style=flat-square&maxAge=86400
 [pr-url]: https://github.com/codesandcoffees/react-kit/pulls
-[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg?style=flat-square&maxAge=3600
+[contributor-img]: https://img.shields.io/github/contributors/codesandcoffees/react-kit.svg?style=flat-square&maxAge=86400
 [contributor-url]: https://github.com/codesandcoffees/react-kit/graphs/contributors
-[code-size-img]: https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg?style=flat-square&maxAge=3600
+[code-size-img]: https://img.shields.io/github/languages/code-size/codesandcoffees/react-kit.svg?style=flat-square&maxAge=86400
