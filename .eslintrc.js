@@ -1,4 +1,5 @@
 module.exports = {
+  "extends": "airbnb",
   "rules": {
     // react stuff
     "react/prefer-stateless-function": 0,
