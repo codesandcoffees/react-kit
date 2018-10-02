@@ -22,6 +22,9 @@
       "git add"
     ]
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
