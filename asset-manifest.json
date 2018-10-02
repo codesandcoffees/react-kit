@@ -1,9 +1,15 @@
 {
-  "static/js/0.ad970d01.chunk.js": "/react-kit/static/js/0.ad970d01.chunk.js",
-  "static/js/0.ad970d01.chunk.js.map": "/react-kit/static/js/0.ad970d01.chunk.js.map",
-  "static/js/1.3dc1a5b0.chunk.js": "/react-kit/static/js/1.3dc1a5b0.chunk.js",
-  "static/js/1.3dc1a5b0.chunk.js.map": "/react-kit/static/js/1.3dc1a5b0.chunk.js.map",
-  "main.js": "/react-kit/static/js/main.c0d6e135.js",
-  "main.js.map": "/react-kit/static/js/main.c0d6e135.js.map",
-  "index.html": "/react-kit/index.html"
+  "main.js": "/react-kit/static/js/main.206e6cf1.chunk.js",
+  "main.js.map": "/react-kit/static/js/main.206e6cf1.chunk.js.map",
+  "static/js/1.387148aa.chunk.js": "/react-kit/static/js/1.387148aa.chunk.js",
+  "static/js/1.387148aa.chunk.js.map": "/react-kit/static/js/1.387148aa.chunk.js.map",
+  "static/js/2.d18c89fa.chunk.js": "/react-kit/static/js/2.d18c89fa.chunk.js",
+  "static/js/2.d18c89fa.chunk.js.map": "/react-kit/static/js/2.d18c89fa.chunk.js.map",
+  "static/js/3.7ed5d2d6.chunk.js": "/react-kit/static/js/3.7ed5d2d6.chunk.js",
+  "static/js/3.7ed5d2d6.chunk.js.map": "/react-kit/static/js/3.7ed5d2d6.chunk.js.map",
+  "runtime~main.js": "/react-kit/static/js/runtime~main.0afe3c5b.js",
+  "runtime~main.js.map": "/react-kit/static/js/runtime~main.0afe3c5b.js.map",
+  "index.html": "/react-kit/index.html",
+  "precache-manifest.a6ad0a5a8fcbd832286d4376a8df3ddc.js": "/react-kit/precache-manifest.a6ad0a5a8fcbd832286d4376a8df3ddc.js",
+  "service-worker.js": "/react-kit/service-worker.js"
 }
