@@ -132,6 +132,10 @@ This will build the files and deploy them to the `gh-pages` branch
 
 Feel free to open up a [pull request](https://github.com/codesandcoffees/react-kit/pulls) or an [issue](https://github.com/codesandcoffees/react-kit/issues/new)
 
+# Major differences from create-react-app
+- react-kit has no sass-loader since this uses styled-component in which you can still do sass-like syntax
+- The package version number is stored globally through webpack and can be access by the `VERSION` variable
+
 ---
 
 This project is based on [Create React App](https://github.com/facebookincubator/create-react-app).
