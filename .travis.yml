@@ -21,5 +21,3 @@ deploy:
   keep-history: true
   on:
     branch: master
-    tags: true
-    repo: codesandcoffees/react-kit
