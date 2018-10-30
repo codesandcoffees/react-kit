@@ -1,10 +1,10 @@
 {
   "name": "react-kit",
   "description": "A barebones React starter kit.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.2.1"
+    "@codes-and-coffees/react-pkg": "1.2.2"
   },
   "scripts": {
     "start": "node scripts/start.js",
