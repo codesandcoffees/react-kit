@@ -10,6 +10,7 @@ A barebones React starter kit.
 
 #### Repository Status
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/react-kit.svg)](https://greenkeeper.io/)
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
 ![code size][code-size-img]
