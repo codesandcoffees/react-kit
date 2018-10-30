@@ -4,14 +4,13 @@ A barebones React starter kit.
 
 #### Core Dependency Status
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/react-kit.svg)](https://greenkeeper.io/)
-
 [![npm version][npm-img]][npm-url]
 [![node version][node-img]][node-url]
 [![deps][deps-img]][deps-url]
 
 #### Repository Status
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/codesandcoffees/react-kit.svg)](https://greenkeeper.io/)
 [![open issues][issues-img]][issues-url]
 [![open prs][pr-img]][pr-url]
 ![code size][code-size-img]
