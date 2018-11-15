@@ -11,9 +11,13 @@
     "deploy": "npm run build && gh-pages -d build",
     "lint": "eslint .",
     "build": "node scripts/build.js",
-    "precommit": "lint-staged",
     "precommit:init": "npm i lint-staged husky",
     "mine": "npm i fs-extra && node scripts/pre-eject.js && node scripts/eject.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
