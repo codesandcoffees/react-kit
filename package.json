@@ -1,19 +1,23 @@
 {
   "name": "react-kit",
   "description": "A barebones React starter kit.",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": true,
   "dependencies": {
-    "@codes-and-coffees/react-pkg": "1.2.4"
+    "@codes-and-coffees/react-pkg": "1.2.5"
   },
   "scripts": {
     "start": "node scripts/start.js",
     "deploy": "npm run build && gh-pages -d build",
     "lint": "eslint .",
     "build": "node scripts/build.js",
-    "precommit": "lint-staged",
     "precommit:init": "npm i lint-staged husky",
     "mine": "npm i fs-extra && node scripts/pre-eject.js && node scripts/eject.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
